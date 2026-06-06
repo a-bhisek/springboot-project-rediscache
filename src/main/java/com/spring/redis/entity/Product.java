@@ -1,5 +1,7 @@
 package com.spring.redis.entity;
 
+import java.io.Serializable;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,7 +22,7 @@ import lombok.RequiredArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @RequiredArgsConstructor
-public class Product {
+public class Product implements Serializable{
 
 	@Id
 	@SequenceGenerator(name="gen1",sequenceName ="sq1",allocationSize=1,initialValue=1001)
