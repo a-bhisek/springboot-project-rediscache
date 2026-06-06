@@ -1,4 +1,4 @@
-package com.spring.redis;
+package com.spring.redis.entity;
 
 import java.time.LocalDateTime;
 
